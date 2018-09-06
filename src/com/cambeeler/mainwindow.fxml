@@ -1,0 +1,22 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane fx:id="gridPane" fx:controller="com.cambeeler.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+          stylesheets="@styles.css">
+    <Button text="F Ch" onAction="#handleClick"
+            GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <Button text="D Ch" onAction="#handleB2Click"
+            GridPane.rowIndex="0" GridPane.columnIndex="1" />
+    <Button text="B3" GridPane.rowIndex="0" GridPane.columnIndex="2" id="button_three"/>
+    <Button fx:id="button4" text="B4"
+            GridPane.rowIndex="0" GridPane.columnIndex="3" />
+    <Button text="B5" GridPane.rowIndex="0" GridPane.columnIndex="4" />
+    <RadioButton text="R1" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <Label fx:id="label" text="JavaFX effects" GridPane.rowIndex="2" GridPane.columnIndex="0"
+    onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit"  />
+
+</GridPane>
